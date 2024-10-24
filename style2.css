@@ -1,5 +1,48 @@
-.animated-paragraph {
+.container .special {
+    position: relative;
+    width: 50%;
+    padding-top: 5%;
+    margin:auto;
+   }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgb(26, 28, 31);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: justify;
+  }
+
+  .animated-paragraph {
     display: inline-block;
+    margin: auto;
 }
 
 .line {
@@ -7,6 +50,7 @@
     opacity: 0; /* Initially hide each line */
     animation: fadeIn 1s forwards; /* Animation to fade in each line */
     text-align: justify;
+    margin-bottom: 10px; /* gap between lines */
 }
 
 .line:nth-child(1) {
@@ -15,6 +59,10 @@
 
 .line:nth-child(2) {
     animation-delay: 1s; /* Second line appears after 1 second */
+}
+
+.line:nth-child(3) {
+    animation-delay: 2s;
 }
 
 
@@ -26,7 +74,27 @@
         opacity: 1;
     }
 }
-img{
-    width: 50%;
-    height: 50%;
+
+#increase{
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: auto;
+  }
+  
+  .card {
+    padding: 20px;
+    background-color:white;
+    transition: transform .2s; /* Smooth animation */
+    width: 100px;
+    height: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: scale(1.1); /* Zoom effect (110% scale) */
+  }
 }
