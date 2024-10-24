@@ -3,42 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us</title>
      <!-- bootstrap -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
      <!-- bootstrap closed -->
+     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg card text-bg-primary mb-3 fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="color: antiquewhite;" href="#">SoftDev</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" style="color: antiquewhite;"   href="index.html">Home</a>
+              <a class="nav-link" style="color: antiquewhite;"  href="services.html">Services</a>
+              <a class="nav-link active" aria-current="page" style="color: antiquewhite;" href="about.html"> <b> About Us</b></a>
+              <a class="nav-link" style="color: antiquewhite;" href="contact.html">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- end of nav bar -->
+      
     <!-- about us section -->
+    <div class="container">
+      <div class="special">
+        <img src="about.png" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Your business, our expertise—together we build software that solves problems and seizes opportunities. <br> From concept to deployment, we turn your vision into reality.</div>
+        </div>
+      </div>
+    </div>
+      
+    <!-- </div>
+     <h5 style="text-align: center; padding-top: 5rem;">Your business, our expertise—together we build software that solves problems and seizes opportunities. <br> From concept to deployment, we turn your vision into reality."</h5>
+     <div class="container text-center">
+      <img src="about.png" class="img-fluid mx-auto d-block" alt="Centered Image" style="height: 30rem;width: 30rem;">
+    </div> -->
+     
     <section id="about" class="py-5">
         <div class="container" style="text-align: justify;">
-            <div class="card mb-3" style="width:70rem;">
-                <div class="card-body">
-                  <h5 class="card-title">About Us</h5>
-                  <p class="card-text">At SoftDev, we are passionate about transforming ideas into digital solutions that make a real impact. Founded with a vision to innovate and inspire, we specialize in providing cutting-edge software development, IT consulting, and digital transformation services to businesses of all sizes.</p>
-                    <p><b>Our Mission</b><br>To empower businesses through technology by delivering innovative, reliable, and tailored software solutions that meet their unique needs and challenges.</p>
-                    <p><b>Our Vision</b> <br> To be a global leader in software development and digital transformation, helping businesses thrive in an increasingly digital world.</p>
+            <div class="card text-bg-primary mb-3" style="width:70rem;">
+                <div class="animated-paragraph">
+                  <span class="line"><b> About Us</b> <br> At SoftDev, we are passionate about transforming ideas into digital solutions that make a real impact. Founded with a vision to innovate and inspire, we specialize in providing cutting-edge software development, IT consulting, and digital transformation services to businesses of all sizes.</span>
+                    <span class="line"><b>Our Mission</b><br>To empower businesses through technology by delivering innovative, reliable, and tailored software solutions that meet their unique needs and challenges.</span>
+                    <span class="line"><b>Our Vision</b> <br> To be a global leader in software development and digital transformation, helping businesses thrive in an increasingly digital world.</span>
             </div>
             </div>
             </div>
             </section>
+
+           
+             
+            
                 <!-- why us -->
-                 <section>
-                  <div class="card text-bg-dark">
-                    <img src="whyUs.png" class="card-img" alt="why">
-                    <div class="card-img-overlay">
-                        <h4 class="text-black">Why Us</h4>
-                                <ol>
-                                    <li class="text-black">Expertise and Experience</li>
-                                    <li class="text-black">Client-Centric Approach </li>
-                                    <li class="text-black">Innovative Solutions</li>
-                                    <li class="text-black">Quality You Can Trust</li>
-                                    <li class="text-black">On-Time Delivery</li>
-                                    <li class="text-black">Support and Maintenance </li>                  
-                                </ol>
+                 <section id="increase">
+                  <div class="container">
+                    <h3 style="text-align: center;">Why us ?</h3>
+                    <hr>
+                    <div class="zoom">
+                      <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                    <div class="card" style="width: 16rem; height: 25rem;box-shadow: 10px 10px 5px lightblue;">
+                      <img src="expertise.png" class="card-img-top img-fixed-size" alt="picture" style="width: 14rem; height: 10rem;">
+                    <div class="card-body">
+                      <p class="card-text" style="text-align: justify;">We stay ahead of the latest technologies, ensuring your solution is cutting-edge, secure, and scalable. Partner with us for reliable, high-quality software development that accelerates your success.</p>
                     </div>
                   </div>
-                 </section>
+                  </div>
+  
+                  
+                    <div class="col">
+                    <div class="card" style="width: 16rem; height: 25rem;box-shadow: 10px 10px 5px lightblue;" >
+                    <img src="ontime.png" class="card-img-top img-fixed-size" alt="picture" style="width: 14rem; height: 10rem;" >
+                      <div class="card-body">
+                        <p class="card-text" style="text-align: justify;">With a proven project management process, we ensure that your software is delivered on schedule, without compromising quality.</p>
+                    </div>
+                  </div>
+                  </div>
+  
+  
+                  <div class="col">
+                    <div class="card" style="width: 16rem; height: 25rem;box-shadow: 10px 10px 5px lightblue;">
+                    <img src="client.png" class="card-img-top img-fixed-size" alt="picture" style="width: 14rem; height: 10rem;">
+                    <div class="card-body">
+                      <p class="card-text" style="text-align: justify;"> We take the time to understand your specific needs and challenges, developing custom applications that solve problems and create opportunities.</p>
+                    </div>
+                  </div>
+                  </div>
+  
+                  <div class="col">
+                    <div class="card" style="width: 16rem; height: 25rem;box-shadow: 10px 10px 5px lightblue;">
+                    <img src="support.png" class="card-img-top img-fixed-size" alt="picture" style="width: 14rem; height: 10rem;">
+                    <div class="card-body">
+                      <p class="card-text" style="text-align: justify;">Whether it's troubleshooting issues, regular updates, or performance optimization, we're here to provide ongoing support that keeps your system running smoothly.</p>
+                    </div>
+                  </div>
+                  </div>
+                    </div>
+                  
+              </div>
+            </section>
+                 
+
+                  <!-- footer -->
+       <footer class="bg-dark text-white mt-5 pt-4 pb-4">
+        <div class="order">
+         <div class="container text-center">
+           <div class="row">
+                 <!-- Footer Column 1 -->
+                 <div class="col">
+                   <h5>About Us</h5>
+                   <p style="text-align: justify;">We are a leading software development company, providing innovative tech solutions to clients worldwide. Our expertise spans across web development, mobile apps, cloud computing, and cybersecurity, delivering custom solutions that drive success.</p>
+                 </div>
+           
+             <div class="col order-5">
+              <!-- Footer Column 2 -->
+               <h5>Quick Links</h5>
+               <ul class="list-unstyled">
+                 <li><a href="index.html" class="text-white">Home</a></li>
+                 <li><a href="services.html" class="text-white">Services</a></li>
+                 <li><a href="about.html" class="text-white">About</a></li>
+                 <li><a href="contact.html" class="text-white">Contact</a></li>
+               </ul>
+             </div>
+ 
+             <div class="col order-1">
+               <h5>Contact Us</h5>
+               <p>Email: info@example.com</p>
+               <p>Phone: +91 123456789</p>
+               <p>Address: Bangalore, India</p>
+             </div>
+           </div>
+         </div>
+        </div>
+ 
+       <hr>
+         
+       
+           <!-- Footer Bottom -->
+           <div class="row mt-3">
+             <div class="col text-center">
+               <p class="mb-0"> copyrights @ 2024 All Rights Reserved by SoftDev.</p>
+             </div>
+           </div>
+         </div>
+       </footer>
      <!-- javascript -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
