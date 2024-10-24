@@ -1,0 +1,88 @@
+.container .special {
+    position: relative;
+    width: 50%;
+    padding-top: 5%;
+    margin:auto;
+   }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgb(26, 28, 31);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: justify;
+  }
+
+  .animated-paragraph {
+    display: inline-block;
+    margin: auto;
+}
+
+.line {
+    display: block; /* Ensures each line appears on a new line */
+    opacity: 0; /* Initially hide each line */
+    animation: fadeIn 1s forwards; /* Animation to fade in each line */
+    text-align: justify;
+    margin-bottom: 10px; /* gap between lines */
+}
+
+.line:nth-child(1) {
+    animation-delay: 0s; /* First line shows immediately */
+}
+
+.line:nth-child(2) {
+    animation-delay: 1s; /* Second line appears after 1 second */
+}
+
+.line:nth-child(3) {
+    animation-delay: 2s;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#increase.zoom {
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }

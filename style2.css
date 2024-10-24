@@ -1,0 +1,32 @@
+.animated-paragraph {
+    display: inline-block;
+}
+
+.line {
+    display: block; /* Ensures each line appears on a new line */
+    opacity: 0; /* Initially hide each line */
+    animation: fadeIn 1s forwards; /* Animation to fade in each line */
+    text-align: justify;
+}
+
+.line:nth-child(1) {
+    animation-delay: 0s; /* First line shows immediately */
+}
+
+.line:nth-child(2) {
+    animation-delay: 1s; /* Second line appears after 1 second */
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+img{
+    width: 50%;
+    height: 50%;
+}
